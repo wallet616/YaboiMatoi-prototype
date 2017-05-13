@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bognerek :: Prototype</title>
+    <meta name="Description" content="Prototyp." />
+
+    <meta name="Author" content="Piotr Bartela - wallet616">
+    <link type="text/plain" rel="author" href="humans.txt" />
+
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/sly.min.js"></script>
+    <script type="text/javascript" src="js/MusicList.js"></script>
+    <script type="text/javascript" src="js/AudioNode.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</header>
+
+<body>
+
+    <!-- Title -->
+    <div class="jumbotron text-center" id="panel-logo">
+        <div class="logo-decoration-container">
+            <div class="logo-decoration one"></div>
+            <div class="logo-decoration two"></div>
+        </div>
+        <h1 class="slideanim slide" id="logo-banner">YaboiMatoi</h1>
+    </div>
+    <!-- ~Title -->
+
+
+
+    <div class="container-fluid" id="panel-music">
+        <div class="container">
+            <div class="row">
+                <!-- Image -->
+                <div id="music-image-container" class="text-center">
+                    <img id="music-image-warp" class="music-image slideanim" />
+                    <h2 id="music-title-warp" class="slideanim">Lorem ipsum!</h2>
+                </div>
+                <!-- ~Image -->
+            </div>
+            <div class="row">
+                <!-- Buttons -->
+                <div id="music-buttons" class="text-center slideanim unselectable">
+                    <div class="music-button" id="music-button-previous">
+                        <span class="glyphicon glyphicon-step-backward"></span>
+                    </div>
+                    <div class="music-button" id="music-button-stop">
+                        <span class="glyphicon glyphicon-stop"></span>
+                    </div>
+                    <div class="music-button" id="music-button-play">
+                        <span class="glyphicon glyphicon-play" id="music-button-play-warp"></span>
+                    </div>
+                    <div class="music-button" id="music-button-next">
+                        <span class="glyphicon glyphicon-step-forward"></span>
+                    </div>
+                </div>
+                <!-- ~Buttons -->
+            </div>
+            <div class="row">
+                <!-- Description -->
+                <div class="col-md-1 col-lg-2"></div>
+                <div class="col-md-10 col-lg-8 col-sm-12 col-xs-12">
+                    <section id="music-description-warp" class="slideanim"></section>
+                </div>
+                <!-- ~Description -->
+            </div>
+        </div>
+        <div class="row">
+            <!-- List -->
+            <div class="frame" id="frame"></div>
+            <div class="scrollbar" id="scrollbar">
+                <div class="handle">
+                    <div class="mousearea"></div>
+                </div>
+            </div>
+            <!-- ~List -->
+        </div>
+        <div class="row" id="equalizer_row">
+            <canvas id="equalizer" width="1" height="1"></canvas>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="jumbotron text-center" id="panel-about">
+        <div class="panel-about-title-bg">
+            <div class="panel-about-title-content">
+                <h1 class="slideanim">About my person</h1>
+            </div>
+        </div>
+        <div class="panel-about-img-bg"></div>
+        <div class="row holder">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img src="data/yaboimatoi.jpg" class="img-circle slideanim img-about" alt="This me" width="300" height="300">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div id="about-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>Tarcu erat, hendrerit nec arcu sit amet, tincidunt consectetur justo. </p>
+                </div>
+                <div id="about-links">
+                    <div class="col-xs-4"><a href="#" class="icons icon-mail slideanim">&#xe800;</a></div>
+                    <div class="col-xs-4"><a href="#" class="icons icon-youtube slideanim">&#xf167;</a></div>
+                    <div class="col-xs-4"><a href="#" class="icons icon-gplus-1 slideanim">&#xf30f;</a></div>
+                    <div class="col-xs-6"><a href="#" class="icons icon-twitter slideanim">&#xf099;</a></div>
+                    <div class="col-xs-6"><a href="#" class="icons icon-facebook slideanim">&#xf09a;</a></div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            Created by Piotr Barterla
+        </footer>
+    </div>
+    <!-- ~About -->
+</body>
+
+</html>
